@@ -1,0 +1,7 @@
+- if session[:access_token]
+  = link_to 'Logout Evernote', logout_path
+  br
+  = "Evernote Access Token: #{session[:access_token]}"
+  = link_to 'List Notebooks', notebooks_path
+- else
+  = link_to 'Login Evernote', evernote_oauth_url

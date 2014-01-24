@@ -20,3 +20,5 @@ public/coverage
 .tags*
 .rbenv-version
 .DS_Store
+
+config/evernote.yml

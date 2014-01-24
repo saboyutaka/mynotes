@@ -15,6 +15,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 1.2'
 gem 'turbolinks'
 
+gem 'omniauth-evernote'
+gem 'evernote_oauth'
+
 # Internationalization
 # gem 'rails-i18n'
 

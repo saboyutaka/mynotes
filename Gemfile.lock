@@ -67,6 +67,10 @@ GEM
     diff-lcs (1.2.5)
     docile (1.1.2)
     erubis (2.7.0)
+    evernote-thrift (1.25.1)
+    evernote_oauth (0.2.3)
+      evernote-thrift
+      oauth (>= 0.4.1)
     execjs (2.0.2)
     factory_girl (4.3.0)
       activesupport (>= 3.0.0)
@@ -91,6 +95,7 @@ GEM
     guard-spring (0.0.4)
       guard
       spring
+    hashie (2.0.5)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -129,6 +134,17 @@ GEM
     net-ssh (2.7.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    oauth (0.4.7)
+    omniauth (1.2.1)
+      hashie (>= 1.2, < 3)
+      rack (~> 1.0)
+    omniauth-evernote (1.2.0)
+      evernote-thrift
+      multi_json (~> 1.0)
+      omniauth-oauth (~> 1.0)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
     parser (2.1.4)
       ast (~> 1.1)
       slop (~> 3.4, >= 3.4.5)
@@ -271,6 +287,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   database_cleaner
+  evernote_oauth
   factory_girl_rails
   ffaker
   guard
@@ -284,6 +301,7 @@ DEPENDENCIES
   mail_view
   meta_request
   mysql2
+  omniauth-evernote
   poltergeist
   pry-byebug
   pry-rails
