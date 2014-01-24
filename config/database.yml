@@ -1,0 +1,20 @@
+common: &common
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: <%= ENV['MY_WORDS_DBUSER'] || 'root' %>
+  password: <%= ENV['MY_WORDS_DBPASS'] %>
+  host: <%= ENV['MY_WORDS_DBHOST'] || 'localhost' %>
+  port: <%= ENV['MY_WORDS_DBPORT'] %>
+
+development:
+  <<: *common
+  database: my_words_development
+
+test:
+  <<: *common
+  database: my_words_test
+
+production:
+  <<: *common
+  database: my_words_production
