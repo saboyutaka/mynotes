@@ -9,11 +9,11 @@ Bundler.require(:default, Rails.env)
 module MyWords
   class Application < Rails::Application
     config.generators do |g|
-   g.helper       false
-   g.jbuilder     false
-   g.assets       false
-   g.test_framework :rspec, view_specs: false, request_specs: false
- end
+     g.helper       false
+     g.jbuilder     false
+     g.assets       false
+     g.test_framework :rspec, view_specs: false, request_specs: false
+   end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
