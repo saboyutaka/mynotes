@@ -27,6 +27,8 @@ gem 'evernote_oauth'
 # Profiler
 gem 'rack-mini-profiler'
 
+gem 'dotenv-rails'
+
 group :development, :test do
   # Web Server
   gem 'puma'

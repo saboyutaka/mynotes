@@ -6,6 +6,7 @@ common: &common
   password: <%= ENV['MY_WORDS_DBPASS'] %>
   host: <%= ENV['MY_WORDS_DBHOST'] || 'localhost' %>
   port: <%= ENV['MY_WORDS_DBPORT'] %>
+  socket: <%= ENV['MY_WORDS_DBSOCKET'] %>
 
 development:
   <<: *common
